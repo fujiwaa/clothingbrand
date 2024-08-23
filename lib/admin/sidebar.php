@@ -1,0 +1,13 @@
+<div class="sidenav flex-shrink-0 bg-white pt-5" style="width: 16rem; height: auto">
+    <nav class="d-flex flex-column align-items-center gap-5">
+        <img src="<?php echo $web_baseurl; ?>assets/images/logo.png" alt="Logo" width="100">
+        <ul style="list-style-type: none;" class="p-0 d-flex flex-column gap-4">
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/dashboard" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/dashboard') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/dashboard") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-solid fa-display p-2"></i> Dashboard</a></li>
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/pesanan/index" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/pesanan/index') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/pesanan/index") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-solid fa-chart-column p-2"></i> Status Pesanan</a></li>
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/produk/index" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/produk/index') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/produk/index") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-solid fa-clipboard-list p-2"></i> Produk</a></li>
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/kalender/index" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/kalender/index') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/kalender/index") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-regular fa-calendar p-2"></i> Kalender</a></li>
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/pesan" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/pesan/') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/pesan/") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-regular fa-message p-2"></i> Pesan</a></li>
+            <li class="fs-6"><a href="<?php echo $web_baseurl; ?>admin/settings" class="text-decoration-none<?php echo (strpos($_SERVER['REQUEST_URI'], 'admin/settings/') == true && parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) === "/admin/settings/") ? ' text-dark fw-bold' : ' text-secondary' ?>"><i class="fa-solid fa-gear p-2"></i> Pengaturan</a></li>
+        </ul>
+    </nav>
+</div>
